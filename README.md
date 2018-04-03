@@ -1,2 +1,2 @@
 # WR_simpleGCM
-Further improved in GFDL's idealized General Circulation Models 
+Further improvement for GFDL's idealized General Circulation Models 
