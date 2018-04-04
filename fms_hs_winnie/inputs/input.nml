@@ -16,12 +16,12 @@
 
   &spectral_init_cond_nml
         topography_option = 'interpolated',
-        topog_file_name = '/glade/p/work/zhengwu/fms_param/navy_topography.data.nc',
+        topog_file_name = '/$PATH/navy_topography.data.nc',
         topog_field_name = 'zdat'
 /
 
  &topography_nml
-        topog_file = '/glade/p/work/zhengwu/fms_param/navy_topography.data.nc',
+        topog_file = '/$PATH/navy_topography.data.nc',
 /
 
  &gaussian_topog_nml
