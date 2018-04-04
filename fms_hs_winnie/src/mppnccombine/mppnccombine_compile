@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+IC=icc
+
+LIBS=$(nc-config --libs)
+INCS=$(nc-config --cflags)
+
+echo $IC $LIBS $INCS
+ulimit -s unlimited
+
+$IC $INCS $LIBS mppnccombine.c -o mppnccombine.ifort
