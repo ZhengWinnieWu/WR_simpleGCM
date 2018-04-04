@@ -14,28 +14,56 @@
 /
 
 
+  &spectral_init_cond_nml
+        topography_option = 'interpolated',
+        topog_file_name = '/glade/p/work/zhengwu/fms_param/navy_topography.data.nc',
+        topog_field_name = 'zdat'
+/
+
+ &topography_nml
+        topog_file = '/glade/p/work/zhengwu/fms_param/navy_topography.data.nc',
+/
+
+ &gaussian_topog_nml
+    height(1) = 4000,
+    olon(1) = 0, 
+    olat(1) = 45,
+    wlon(1) = 50,
+    wlat(1) = 20, 
+    rlon(1) = 0, 
+    rlat(1) = 0,
+    height(2) = 4000,
+    olon(2) = 180, 
+    olat(2) = 45,
+    wlon(2) = 50,
+    wlat(2) = 20, 
+    rlon(2) = 0, 
+    rlat(2) = 0,
+/
+
  &hs_forcing_nml
     no_forcing = .false.,
     trsink=0.,
     surface_forcing_input = .false.,
-    do_conserve_energy    =  .true.,
-    equilibrium_tau_option = 'from_file',
-    equilibrium_t_option = 'from_file',
+    do_conserve_energy    = .true.,
+    equilibrium_tau_option = $equilibrium_option,
+    equilibrium_t_option   = $equilibrium_option,
     pv_sat_flag   =  .false.,
     sat_only_flag =  .false.,
     pv_gamma = 4.e-3
     pv_phi0 = 50.,
     pv_dphi = -10.,
     sc_flag = .false.,
-    sponge_flag	=  .true.,
+    sponge_flag =  .true.,
     sponge_pbottom = 5.e1,
     sponge_tau_days = 0.5,
-    sponge_eddies = .false.,
-    sponge_eddies_days = 0.5
+    sigma_strat1 = 0.15,
+    sigma_strat2 = 0.095,
+    drag_file = $drag_file_name,
 /
 
  &main_nml
-         days   = 200,
+         days   = $days,
          dt_atmos = 800
 /
 
@@ -66,54 +94,51 @@
     vert_coord_option       = 'input'
     scale_heights           = 11.0,
     surf_res                = 0.5,
-    exponent                = 3.0
-/
-
- &spectral_init_cond_nml
-	topography_option	= 'flat',
+    exponent                = 3.0,
+    ocean_topog_smoothing   = 0.0,
 /
 
  &vert_coordinate_nml
-	pk(1)=0,bk(1)=0,
-	pk(2)=1.9201,bk(2)=0,
-	pk(3)=4.7775,bk(3)=0,
-	pk(4)=10.325,bk(4)=0,
-	pk(5)=20.133,bk(5)=0,
-	pk(6)=36.284,bk(6)=0,
-	pk(7)=61.443,bk(7)=0,
-	pk(8)=98.954,bk(8)=0,
-	pk(9)=152.9,bk(9)=0,
-	pk(10)=228.08,bk(10)=0,
-	pk(11)=330.42,bk(11)=0,
-	pk(12)=466.6,bk(12)=0,
-	pk(13)=644.22,bk(13)=0,
-	pk(14)=872.41,bk(14)=0,
-	pk(15)=1161.2,bk(15)=0,
-	pk(16)=1520.9,bk(16)=0,
-	pk(17)=1965.7,bk(17)=0,
-	pk(18)=2508.8,bk(18)=0,
-	pk(19)=3166.4,bk(19)=0,
-	pk(20)=3954.7,bk(20)=0,
-	pk(21)=4892,bk(21)=0,
-	pk(22)=5625.4,bk(22)=0.0037013,
-	pk(23)=6387,bk(23)=0.009005,
-	pk(24)=7163.2,bk(24)=0.016314,
-	pk(25)=7933.7,bk(25)=0.0261,
-	pk(26)=8665.8,bk(26)=0.038875,
-	pk(27)=9328.2,bk(27)=0.055237,
-	pk(28)=9894.4,bk(28)=0.07595,
-	pk(29)=10310,bk(29)=0.10175,
-	pk(30)=10519,bk(30)=0.13348,
-	pk(31)=10468,bk(31)=0.17219,
-	pk(32)=10085,bk(32)=0.21897,
-	pk(33)=9286.4,bk(33)=0.27495,
-	pk(34)=7988.8,bk(34)=0.34166,
-	pk(35)=6085.8,bk(35)=0.42044,
-	pk(36)=3464.7,bk(36)=0.51291,
-	pk(37)=0,bk(37)=0.6209,
-	pk(38)=0,bk(38)=0.7025,
-	pk(39)=0,bk(39)=0.7925,
-	pk(40)=0,bk(40)=0.8914,
-	pk(41)=0,bk(41)=1
+        pk(1)=0,bk(1)=0,
+        pk(2)=1.9201,bk(2)=0,
+        pk(3)=4.7775,bk(3)=0,
+        pk(4)=10.325,bk(4)=0,
+        pk(5)=20.133,bk(5)=0,
+        pk(6)=36.284,bk(6)=0,
+        pk(7)=61.443,bk(7)=0,
+        pk(8)=98.954,bk(8)=0,
+        pk(9)=152.9,bk(9)=0,
+        pk(10)=228.08,bk(10)=0,
+        pk(11)=330.42,bk(11)=0,
+        pk(12)=466.6,bk(12)=0,
+        pk(13)=644.22,bk(13)=0,
+        pk(14)=872.41,bk(14)=0,
+        pk(15)=1161.2,bk(15)=0,
+        pk(16)=1520.9,bk(16)=0,
+        pk(17)=1965.7,bk(17)=0,
+        pk(18)=2508.8,bk(18)=0,
+        pk(19)=3166.4,bk(19)=0,
+        pk(20)=3954.7,bk(20)=0,
+        pk(21)=4892,bk(21)=0,
+        pk(22)=5625.4,bk(22)=0.0037013,
+        pk(23)=6387,bk(23)=0.009005,
+        pk(24)=7163.2,bk(24)=0.016314,
+        pk(25)=7933.7,bk(25)=0.0261,
+        pk(26)=8665.8,bk(26)=0.038875,
+        pk(27)=9328.2,bk(27)=0.055237,
+        pk(28)=9894.4,bk(28)=0.07595,
+        pk(29)=10310,bk(29)=0.10175,
+        pk(30)=10519,bk(30)=0.13348,
+        pk(31)=10468,bk(31)=0.17219,
+        pk(32)=10085,bk(32)=0.21897,
+        pk(33)=9286.4,bk(33)=0.27495,
+        pk(34)=7988.8,bk(34)=0.34166,
+        pk(35)=6085.8,bk(35)=0.42044,
+        pk(36)=3464.7,bk(36)=0.51291,
+        pk(37)=0,bk(37)=0.6209,
+        pk(38)=0,bk(38)=0.7025,
+        pk(39)=0,bk(39)=0.7925,
+        pk(40)=0,bk(40)=0.8914,
+        pk(41)=0,bk(41)=1
 /
 
