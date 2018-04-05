@@ -1,5 +1,6 @@
 # WR_simpleGCM
-Further improvement for GFDL's idealized General Circulation Models 
+Further improvement of GFDL's idealized General Circulation Model
+
 We employ actual orography with land and ocean into the idealized model. We use an iterative prodedure after Chang (2006) to determine equilibrium temperatures (Teq) that lead to reanalysis-like temperatures and diabatic heating.  We also vary the magnitude of the Rayleigh damping coefficients. The detailed discription of the improved model and the corresponding outcomes are in 
 
 Wu, Z. and T. Reichler (2018): Towards a More Earth-like Circulation in an Idealized Model, Geophys. Res. Lett. (submitted).
