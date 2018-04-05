@@ -1,13 +1,13 @@
 # WR_simpleGCM
 Further improvement of GFDL's idealized General Circulation Model
 
-We employ actual orography with land and ocean into the idealized model. The Teq we provide corresponds to iteration 31 of DRAG experimeent D3 as described in Wu and Reichler (2018). It is the result of an iterative procedure after Chang (2006) and leads to reanalysis-like temperatures and diabatic heating. We also vary the magnitude of the Rayleigh damping coefficients. A description of the improved model and corresponding outcomes are in 
+We employ actual orography with land and ocean in the idealized model. The Teq we provide corresponds to iteration 31 of DRAG experimeent D3 as described in Wu and Reichler (2018). It is the result of an iterative procedure after Chang (2006) and leads to reanalysis-like temperatures and diabatic heating. We also vary the magnitude of the Rayleigh damping coefficients. A description of the improved model and corresponding outcomes are in 
 
-Wu, Z. and T. Reichler (2018): Towards a More Earth-like Circulation in an Idealized Model, Geophys. Res. Lett. (submitted).
+Wu, Z. and T. Reichler (2018a): Towards a More Earth-like Circulation in an Idealized Model, Geophys. Res. Lett. (submitted).
 
 We further use this modified model to study the surface control of the frequency of stratospheric sudden warming events, as described in 
 
-Wu, Z. and T. Reichler (2018): Surface Control of the Frequency of Stratospheric Sudden Warming Events, J. Climate (in preparation).
+Wu, Z. and T. Reichler (2018b): Surface Control of the Frequency of Stratospheric Sudden Warming Events, J. Climate (in preparation).
 
 We base on Held and Suarez (1994) benchmark, and start our experiments using an analytically determined Teq and Tau profile given in the appendix of Jucker et al. (2014). The main references are
 
