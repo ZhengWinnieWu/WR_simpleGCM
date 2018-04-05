@@ -1,7 +1,7 @@
 # WR_simpleGCM
 Further improvement of GFDL's idealized General Circulation Model
 
-We employ actual orography with land and ocean in the idealized model. The Teq we provide corresponds to iteration 31 of DRAG experimeent D3 as described in Wu and Reichler (2018). It is the result of an iterative procedure after Chang (2006) and leads to reanalysis-like temperatures and diabatic heating. We also vary the magnitude of the Rayleigh damping coefficients. A description of the improved model and corresponding outcomes are in 
+We employ actual orography with land and ocean in the idealized model. The Teq we provide corresponds to iteration 31 of DRAG experimeent D3 as described in Wu and Reichler (2018a). It is the result of an iterative procedure after Chang (2006) and leads to reanalysis-like temperatures and diabatic heating. We also vary the magnitude of the Rayleigh damping coefficients. A description of the improved model and corresponding outcomes are in 
 
 Wu, Z. and T. Reichler (2018a): Towards a More Earth-like Circulation in an Idealized Model, Geophys. Res. Lett. (submitted).
 
