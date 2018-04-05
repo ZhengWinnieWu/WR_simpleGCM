@@ -17,4 +17,4 @@ Jucker, M., S. Fueglistaler, and G. K. Vallis, 2014: Stratospheric sudden warmin
 
 Chang, E. K. M., 2006: An idealized nonlinear model of the Northern Hemisphere winter storm tracks. J. Atmos. Sci., 63, 1818–1839.
 
-This code uses "read from file" to get the Teq profile. In order to make the code more efficient, this modified code reduces the times for interpolation. It is better to replace the whole "src" folder to replace your "src" folder if you already have the experiment from the Flexible Modeling System (FMS). 
+This code is based on JFV-strat (link?). The following modules were modified: ... The new code reads in twelve monthly Teq profiles during initialization and then calculates daily Teq fields by linear interpolation. The entire interpolation is done only once during initialization to reduce the run time. Additional modifications concern ... Since several modules of the original JFV-strat code were modified, it is probably best to replace the entire "src" folder. 
