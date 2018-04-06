@@ -1,5 +1,3 @@
-# replace $PATH 
-
 &diag_manager_nml
     mix_snapshot_average_fields=.false.,
     debug_diag_manager=.true.
