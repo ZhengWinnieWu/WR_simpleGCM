@@ -8,3 +8,6 @@ How to compile this code. In parentheses are examples.
 > make
 > cd ../src/mppnccombine
 > ./mppnccombine_compile
+
+
+## $PATH needs to be replaced by the directory of the code.
