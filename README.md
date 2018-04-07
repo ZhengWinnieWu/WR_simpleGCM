@@ -15,7 +15,7 @@ The new code reads in twelve monthly Teq and Tau profiles during initialization 
 •	temp_file = 'name of Teq data file.nc', <br />
 •	tau_file = 'name of Tau data file.nc'. <br />
 
-The main references are:
+The main references are:<br />
 Chang, E. K. M., 2006: An idealized nonlinear model of the Northern Hemisphere winter storm tracks. J. Atmos. Sci., 63, 1818–1839.<br />
 Held, I. I. M., and M. M. J. Suarez, 1994: A proposal for the intercomparison of the dynamical cores of atmospheric general circulation models. Bull. Amer. Meteor. Soc., 75, 1825–1830.<br />
 Jucker, M., S. Fueglistaler, and G. K. Vallis, 2014: Stratospheric sudden warmings in an idealized GCM. J. Geophys. Res. Atmos., 119, 11 054–11 064, doi:10.1002/2014JD022170.<br />
