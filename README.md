@@ -3,8 +3,8 @@
 
 Our experiments are similar to the Held and Suarez (1994) benchmark. We start our experiments using an analytically determined equilibrium temperature (Teq) and Newtonian relaxation time scale (Tau) profile after Jucker et al. (2014). We then gradually optimize Teq by introducing zonal asymmetries into it using the iterative procedure following Chang (2006). The Teq we provide here corresponds to iteration 31 of DRAG experiment D3 with the surface drag being 0.9 1/day. The file contains 12 monthly Teq fields, each varying in the three spatial dimensions. We also employ an actual orography with land and ocean. Given these modifications, the GCM produces temperatures and diabatic heating that are very similar to that of the reanalysis. A detailed description of the improved model and the outcomes of the various drag experiments are described in Wu and Reichler (2018a, 2018b). 
 
-This code is based on **JFV-strat** (https://github.com/mjucker/JFV-strat). The following program and modules were modified:
-•	atmos_model
+This code is based on **JFV-strat** (https://github.com/mjucker/JFV-strat). The following program and modules were modified:<br />
+•	atmos_model<br />
 •	hs_forcing_mod
 •	atmosphere_mod
 •	time_manager_mod	
