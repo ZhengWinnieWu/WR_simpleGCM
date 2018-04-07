@@ -17,7 +17,11 @@ The new code reads in twelve monthly Teq and Tau profiles during initialization 
 
 The main references are:
 Chang, E. K. M., 2006: An idealized nonlinear model of the Northern Hemisphere winter storm tracks. J. Atmos. Sci., 63, 1818–1839.
-\Held, I. I. M., and M. M. J. Suarez, 1994: A proposal for the intercomparison of the dynamical cores of atmospheric general circulation models. Bull. Amer. Meteor. Soc., 75, 1825–1830.
-\Jucker, M., S. Fueglistaler, and G. K. Vallis, 2014: Stratospheric sudden warmings in an idealized GCM. J. Geophys. Res. Atmos., 119, 11 054–11 064, doi:10.1002/2014JD022170.
-\Wu, Z. and T. Reichler (2018a): Towards a More Earth-like Circulation in an Idealized Model, Geophys. Res. Lett. (submitted).
-\Wu, Z. and T. Reichler (2018b): Surface Control of the Frequency of Stratospheric Sudden Warming Events, J. Climate (in preparation).
+
+Held, I. I. M., and M. M. J. Suarez, 1994: A proposal for the intercomparison of the dynamical cores of atmospheric general circulation models. Bull. Amer. Meteor. Soc., 75, 1825–1830.
+
+Jucker, M., S. Fueglistaler, and G. K. Vallis, 2014: Stratospheric sudden warmings in an idealized GCM. J. Geophys. Res. Atmos., 119, 11 054–11 064, doi:10.1002/2014JD022170.
+
+Wu, Z. and T. Reichler (2018a): Towards a More Earth-like Circulation in an Idealized Model, Geophys. Res. Lett. (submitted).
+
+Wu, Z. and T. Reichler (2018b): Surface Control of the Frequency of Stratospheric Sudden Warming Events, J. Climate (in preparation).
