@@ -19,5 +19,5 @@ The main references are:<br />
 Chang, E. K. M., 2006: An idealized nonlinear model of the Northern Hemisphere winter storm tracks. J. Atmos. Sci., 63, 1818–1839.<br />
 Held, I. I. M., and M. M. J. Suarez, 1994: A proposal for the intercomparison of the dynamical cores of atmospheric general circulation models. Bull. Amer. Meteor. Soc., 75, 1825–1830.<br />
 Jucker, M., S. Fueglistaler, and G. K. Vallis, 2014: Stratospheric sudden warmings in an idealized GCM. J. Geophys. Res. Atmos., 119, 11 054–11 064, doi:10.1002/2014JD022170.<br />
-Wu, Z. and T. Reichler (2018a): Towards a More Earth-like Circulation in an Idealized Model, Geophys. Res. Lett. (submitted).<br />
+Wu, Z. and T. Reichler (2018a): Towards a More Earth-like Circulation in Idealized Models, *J. Adv. Model. Earth Sys.*, **30**(24), 10101-10116. <br />
 Wu, Z. and T. Reichler (2018b): Surface Control of the Frequency of Stratospheric Sudden Warming Events, J. Climate (in preparation).
