@@ -445,7 +445,8 @@ use     tracer_manager_mod, only: get_tracer_index, NO_TRACER !mj
 
 ! If positive, damping time units are (1/s),  value is the inverse of damping time.
 ! If negative, damping time units are (days), value is the damping time. It is converted to (1/s)
-      open(10,file='/glade/p/work/zhengwu/fms_param/' // &  
+! $PATH is the location of the surface momentum damping data file
+      open(10,file='$PATH/' // &  
       & trim(drag_file) // '.txt')
       do ikf=1,128
         read(10,"(64F6.2)") kf(ikf,:)
@@ -473,12 +474,6 @@ use     tracer_manager_mod, only: get_tracer_index, NO_TRACER !mj
         vkf = kf/86400.0
       endif
 
-      !my_pid=1000+mpp_pe()
-      !write (pid_str, "(I4)") my_pid
-      !open(unit=my_pid,file='/glade2/scratch2/zhengwu/FMS/model/archive/' // &
-      !& 'test/' // pid_str // '_drag_filename.txt')
-      !write(my_pid,*) trim(drag_file), kf(10,:)
-      !close(my_pid)
 
 !     ----- for tracers -----
 

@@ -1,4 +1,4 @@
-## $PATH needs to be replaced by the directory where the data is put in. 
+## $PATH needs to be replaced by the directory of the data. 
 
 &diag_manager_nml
     mix_snapshot_average_fields=.false.,
